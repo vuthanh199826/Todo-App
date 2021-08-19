@@ -3,12 +3,12 @@
   Todo App
 </h2>
 <div class="col-md-8 offset-md-2">
-  <input type="text" class="form-control" [formControl]="content" (change)="change()">
+  <input type="text" class="form-control" [formControl]="content">
+  <button (click)="change()">click</button>
   <ul>
-    <li (click)="toggleTodo(i)"
-        [class.complete]="todo.complete"
-        *ngFor="let todo of todos; index as i">
-      {{todo.content}}{{todo.complete}}
+    <li
+        *ngFor="let todo of todos">
+      {{todo.content}}/{{todo.complete}}
     </li>
   </ul>
 </div>

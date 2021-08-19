@@ -18,9 +18,9 @@ export class TodoComponent implements OnInit {
 
   ngOnInit() {
   }
-  toggleTodo(i: number) {
-    this.todos[i].complete = !this.todos[i].complete;
-  }
+  // toggleTodo(i: number) {
+  //   this.todos[i].complete = !this.todos[i].complete;
+  // }
   change() {
     const value = this.content.value;
     if (value) {
